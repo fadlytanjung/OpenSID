@@ -61,6 +61,8 @@ class MY_Controller extends CI_Controller {
 	/*
 	 * Constructor
 	 */
+
+	//tess
 	function __construct()
 	{
 		parent::__construct();
