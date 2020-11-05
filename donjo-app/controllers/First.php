@@ -133,7 +133,6 @@ class First extends Web_Controller {
 	public function index($p=1)
 	{
 		$data = $this->includes;
-
 		$data['p'] = $p;
 		$data['paging'] = $this->first_artikel_m->paging($p);
 		$data['paging_page'] = 'index';
