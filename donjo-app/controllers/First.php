@@ -130,8 +130,19 @@ class First extends Web_Controller {
 		redirect('first');
 	}
 
-	public function index($p=1)
+	public function index()
 	{
+		
+
+		$this->load->view("portal");
+	}
+
+	/*
+	| Artikel bisa ditampilkan menggunakan parameter pertama sebagai id, dan semua parameter lainnya dikosongkan. url artikel/:id
+	| Kalau menggunakan slug, dipanggil menggunakan url artikel/:thn/:bln/:hri/:slug
+	*/
+
+	public function kabar_desa($p=1){
 		$data = $this->includes;
 		$data['p'] = $p;
 		$data['paging'] = $this->first_artikel_m->paging($p);
@@ -173,11 +184,6 @@ class First extends Web_Controller {
 		$this->track_model->track_desa('first');
 		$this->load->view($this->template, $data);
 	}
-
-	/*
-	| Artikel bisa ditampilkan menggunakan parameter pertama sebagai id, dan semua parameter lainnya dikosongkan. url artikel/:id
-	| Kalau menggunakan slug, dipanggil menggunakan url artikel/:thn/:bln/:hri/:slug
-	*/
 	public function artikel($url)
 	{
 		if (is_numeric($url))
