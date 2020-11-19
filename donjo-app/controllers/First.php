@@ -616,4 +616,16 @@ class First extends Web_Controller {
 			echo $content;
 		}
 	}
+
+	public function product(){
+		$this->load->view("produk/index");
+	}
+
+	public function product_detail(){
+		$this->load->view("produk/produk_detail");
+	}
+
+	public function product_cart(){
+		$this->load->view("produk/produk_cart");
+	}
 }

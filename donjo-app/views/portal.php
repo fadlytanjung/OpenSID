@@ -133,8 +133,8 @@ https://templatemo.com/tm-518-sentra
                           <div  class="btn-group" role="group">
                               <div class="white-button button">
                                   <a href="#featured" class="btn shortcut ">ADMINISTRASI</a>
-                                  <a href="#featured" class="btn shortcut ">PEMBAYARAN</a>
-                                  <a href="#featured" class="btn shortcut ">PRODUK</a>
+                                  <a href="#projects" class="btn shortcut ">PEMBAYARAN</a>
+                                  <a href="#produk" class="btn shortcut ">PRODUK</a>
                                   <a href="<?=base_url()?>index.php/First/kabar_desa" class="btn shortcut ">KABAR DESA</a>
                                   <a href="#website_desa" class="btn shortcut ">WEBSITE DESA</a>
                               </div>
@@ -222,7 +222,7 @@ https://templatemo.com/tm-518-sentra
                             <div class="item">
                                  <div  class="btn-group" role="group">
                                   <div class="accent-button button">
-                                    <a href="#blog">EKSPLOR PRODUK</a>
+                                    <a href="<?=base_url()?>index.php/First/product">EKSPLOR PRODUK</a>
                                 </div>
                               </div>
                             </div>
