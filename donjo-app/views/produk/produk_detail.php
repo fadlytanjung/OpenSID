@@ -32,14 +32,14 @@
 	<div class="s-container single-product">
 		<div class="row">
 			<div class="col-2">
-				<img src="https://images.unsplash.com/photo-1525904097878-94fb15835963?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" width="100%" id="productImg">
+				<img src="<?=base_url()?>assets/product/images/<?=$produk[0]['gambar']?>" height="500px" width="100%" id="productImg">
 
 				<div class="s-img-row">
 					<div class="s-img-col">
-						<img src="https://images.unsplash.com/photo-1525904097878-94fb15835963?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" width="100%" class="s-img">
+						<img src="<?=base_url()?>assets/product/images/<?=$produk[0]['gambar']?>" width="100%"  height="100px" class="s-img">
 					</div>
 					<div class="s-img-col">
-						<img src="https://images.unsplash.com/photo-1525904097878-94fb15835963?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" width="100%" class="s-img">
+						<img src="https://images.unsplash.com/photo-1525904097878-94fb15835963?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" width="100%"  height="100px" class="s-img">
 					</div>
 					<div class="s-img-col">
 						<img src="https://images.unsplash.com/photo-1525904097878-94fb15835963?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" width="100%" class="s-img">
@@ -51,9 +51,9 @@
 				</div>
 			</div>
 			<div class="col-2">
-				<p>Kategori Produk</p>
-				<h1>Produk</h1>
-				<h4>Rp. 100.000</h4>
+				<p><?= $produk[0]['kategori']?></p>
+				<h1><?= $produk[0]['nama']?></h1>
+				<h4><?= rupiah($produk[0]['harga'])?></h4>
 				<select>
 					<option>Jenis A</option>
 					<option>Jenis B</option>
@@ -65,7 +65,7 @@
 				<h3>Detail Produk <i class="fa fa-info-circle"></i></h3>
 				<br>
 				<p>
-					Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. 
+					<?=$produk[0]['deskripsi']?>
 				</p>
 			</div>
 		</div>
@@ -76,7 +76,7 @@
 	<div class="s-container">
 		<div class="row row-2">
 			<h2>Produk Serupa</h2>
-			<p>Lihat Semua</p>
+			<!-- <p>Lihat Semua</p> -->
 		</div>
 	</div>
 
@@ -85,57 +85,24 @@
 	<div class="s-container">
 		
 		<div class="row-p">
-			<div class="col-4">
-				<img src="https://images.unsplash.com/photo-1525904097878-94fb15835963?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
-				<h4>Produk 1</h4>
-				<div class="rating">
-					<i class="fa fa-star" ></i>
-					<i class="fa fa-star" ></i>
-					<i class="fa fa-star" ></i>
-					<i class="fa fa-star-half-o" ></i>
-					<i class="fa fa-star-o" ></i>
-				</div>
-				<p>Rp. 100.000</p>
-			</div>
 
+		<?php foreach($produk_serupa as $item){?>
 			<div class="col-4">
-				<img src="https://images.unsplash.com/photo-1525904097878-94fb15835963?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
-				<h4>Produk 1</h4>
-				<div class="rating">
-					<i class="fa fa-star" ></i>
-					<i class="fa fa-star" ></i>
-					<i class="fa fa-star" ></i>
-					<i class="fa fa-star-half-o" ></i>
-					<i class="fa fa-star-o" ></i>
-				</div>
-				<p>Rp. 100.000</p>
+				<a href="<?=base_url()?>index.php/First/product_detail/<?=$item['id']?>">
+					<img src="<?=base_url()?>assets/product/images/<?=$item['gambar']?>">
+					<h4><?= $item['nama']?></h4>
+					<div class="rating">
+						<i class="fa fa-star" ></i>
+						<i class="fa fa-star" ></i>
+						<i class="fa fa-star" ></i>
+						<i class="fa fa-star-half-o" ></i>
+						<i class="fa fa-star-o" ></i>
+					</div>
+					<p><?= rupiah($item['harga'])?></p>
+				</a>
 			</div>
-
-			<div class="col-4">
-				<img src="https://images.unsplash.com/photo-1525904097878-94fb15835963?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
-				<h4>Produk 1</h4>
-				<div class="rating">
-					<i class="fa fa-star" ></i>
-					<i class="fa fa-star" ></i>
-					<i class="fa fa-star" ></i>
-					<i class="fa fa-star-half-o" ></i>
-					<i class="fa fa-star-o" ></i>
-				</div>
-				<p>Rp. 100.000</p>
-			</div>
-
-			<div class="col-4">
-				<img src="https://images.unsplash.com/photo-1525904097878-94fb15835963?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
-				<h4>Produk 1</h4>
-				<div class="rating">
-					<i class="fa fa-star" ></i>
-					<i class="fa fa-star" ></i>
-					<i class="fa fa-star" ></i>
-					<i class="fa fa-star-half-o" ></i>
-					<i class="fa fa-star-o" ></i>
-				</div>
-				<p>Rp. 100.000</p>
-			</div>
+		<?php }?>
+			
 
 		</div>
 	</div>

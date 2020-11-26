@@ -49,7 +49,8 @@ class First extends Web_Controller {
 	public function __construct()
 	{
 		parent::__construct();
-		parent::clear_cluster_session();
+		parent::clear_cluster_session(); 
+ 
 
 		// Jika offline_mode dalam level yang menyembunyikan website,
 		// tidak perlu menampilkan halaman website
@@ -100,6 +101,7 @@ class First extends Web_Controller {
 		$this->load->model('plan_lokasi_model');
 		$this->load->model('plan_area_model');
 		$this->load->model('plan_garis_model');
+		$this->load->model('produk_model');
 	}
 
 	public function auth()
@@ -617,12 +619,32 @@ class First extends Web_Controller {
 		}
 	}
 
-	public function product(){
-		$this->load->view("produk/index");
+	public function product($p = 1, $o = 0){
+
+		
+		$data['p'] = $p;
+		$data['o'] = $o;
+		// $o = 2;
+        $per_page = 8;
+		if (isset($per_page))
+			$this->session->per_page = $per_page;
+
+			$data['per_page'] = $this->session->per_page;
+			$data['produk'] = $this->produk_model->get_general('produk');
+			$data['paging'] = $this->produk_model->paging($p, $o);
+			
+			$data['func'] = 'product';
+			$data['main'] = $this->produk_model->list_data($o, $data['paging']->offset, $data['paging']->per_page);
+			$data['set_page'] = $this->_set_page;
+		$this->load->view("produk/index", $data);
 	}
 
-	public function product_detail(){
-		$this->load->view("produk/produk_detail");
+	public function product_detail($id){
+		$produk = $this->produk_model->get_by_id_general('produk', 'id', $id);
+		
+		$data['produk'] = $produk;
+		$data['produk_serupa'] = $this->produk_model->get_by_id_general_limit('produk', 'kategori', $produk[0]['kategori'], 4);
+		$this->load->view("produk/produk_detail", $data);
 	}
 
 	public function product_cart(){

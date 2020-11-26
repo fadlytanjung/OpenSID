@@ -247,7 +247,7 @@ small{
 }
 
 .footer h3{
-	color: #fff
+	color: #fff;
 	margin-bottom: 20px
 }
 
@@ -367,6 +367,11 @@ select:focus{
 }
 
 .page-btn span:hover{
+	background: #45489A;
+	color : #fff;
+}
+
+.page-btn .active{
 	background: #45489A;
 	color : #fff;
 }

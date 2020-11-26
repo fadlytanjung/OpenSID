@@ -435,7 +435,31 @@ $(document).ready(function()
 			}
 		]
 	});
-
+	$('#table-produk').DataTable({
+		"paging": false,
+    "info": false,
+    "searching": false,
+    "columnDefs": [
+      {
+			  "targets": [0,1,3,7, 8],
+			  "orderable": false
+			},
+			{
+				"targets": [3],
+				"className": "text-center"
+			},
+			{
+				"targets": [9],
+				"render": function ( data, type, full, meta )
+				{
+					if (data == 0) {
+						return "Tidak Aktif"
+					}
+				return "Aktif"
+				}
+			}
+		]
+	});
 	//color picker with addon
   $('.my-colorpicker2').colorpicker();
 	//Text Editor with addon

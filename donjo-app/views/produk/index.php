@@ -39,149 +39,40 @@
 			</select>
 		</div>
 		<div class="row-p">
+        <?php foreach($main as $item){?>
 			<div class="col-4">
-                <a href="<?=base_url()?>index.php/First/product_detail">
-                    <img src="https://images.unsplash.com/photo-1525904097878-94fb15835963?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
-                    <h4>Produk 1</h4>
+                <a href="<?=base_url()?>index.php/First/product_detail/<?=$item['id']?>">
+                    <img src="<?=base_url()?>assets/product/images/<?=$item['gambar']?>">
+                    <h4><?=$item['nama']?></h4>
                     <div class="rating">
-                        <i class="fa fa-star" ></i>
-                        <i class="fa fa-star" ></i>
-                        <i class="fa fa-star" ></i>
-                        <i class="fa fa-star-half-o" ></i>
-                        <i class="fa fa-star-o" ></i>
+                        <?php for($i = 0; $i<$item['rating']; $i++){?>
+                            <i class="fa fa-star" ></i>
+                        <?php $i++;}?>
                     </div>
-                    <p>Rp. 100.000</p>
+                    <p><?=rupiah($item['harga'])?></p>
                 </a>
 			</div>
-
-			<div class="col-4">
-                 <a href="<?=base_url()?>index.php/First/product_detail">
-                    <img src="https://images.unsplash.com/photo-1525904097878-94fb15835963?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
-                    <h4>Produk 1</h4>
-                    <div class="rating">
-                        <i class="fa fa-star" ></i>
-                        <i class="fa fa-star" ></i>
-                        <i class="fa fa-star" ></i>
-                        <i class="fa fa-star-half-o" ></i>
-                        <i class="fa fa-star-o" ></i>
-                    </div>
-                    <p>Rp. 100.000</p>
-                </a>
-			</div>
-
-			<div class="col-4">
-                 <a href="<?=base_url()?>index.php/First/product_detail">
-                    <img src="https://images.unsplash.com/photo-1525904097878-94fb15835963?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
-                    <h4>Produk 1</h4>
-                    <div class="rating">
-                        <i class="fa fa-star" ></i>
-                        <i class="fa fa-star" ></i>
-                        <i class="fa fa-star" ></i>
-                        <i class="fa fa-star-half-o" ></i>
-                        <i class="fa fa-star-o" ></i>
-                    </div>
-                    <p>Rp. 100.000</p>
-                </a>
-			</div>
-
-			<div class="col-4">
-                  <a href="<?=base_url()?>index.php/First/product_detail">
-                    <img src="https://images.unsplash.com/photo-1525904097878-94fb15835963?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
-                    <h4>Produk 1</h4>
-                    <div class="rating">
-                        <i class="fa fa-star" ></i>
-                        <i class="fa fa-star" ></i>
-                        <i class="fa fa-star" ></i>
-                        <i class="fa fa-star-half-o" ></i>
-                        <i class="fa fa-star-o" ></i>
-                    </div>
-                    <p>Rp. 100.000</p>
-                </a>
-			</div>
-
-			<div class="col-4">
-                <a href="<?=base_url()?>index.php/First/product_detail">
-                    <img src="https://images.unsplash.com/photo-1525904097878-94fb15835963?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
-                    <h4>Produk 1</h4>
-                    <div class="rating">
-                        <i class="fa fa-star" ></i>
-                        <i class="fa fa-star" ></i>
-                        <i class="fa fa-star" ></i>
-                        <i class="fa fa-star-half-o" ></i>
-                        <i class="fa fa-star-o" ></i>
-                    </div>
-                    <p>Rp. 100.000</p>
-                </a>
-			</div>
-
-			<div class="col-4">
-                 <a href="<?=base_url()?>index.php/First/product_detail">
-                    <img src="https://images.unsplash.com/photo-1525904097878-94fb15835963?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
-                    <h4>Produk 1</h4>
-                    <div class="rating">
-                        <i class="fa fa-star" ></i>
-                        <i class="fa fa-star" ></i>
-                        <i class="fa fa-star" ></i>
-                        <i class="fa fa-star-half-o" ></i>
-                        <i class="fa fa-star-o" ></i>
-                    </div>
-                    <p>Rp. 100.000</p>
-                </a>
-			</div>
-
-			<div class="col-4">
-                 <a href="<?=base_url()?>index.php/First/product_detail">
-                    <img src="https://images.unsplash.com/photo-1525904097878-94fb15835963?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
-                    <h4>Produk 1</h4>
-                    <div class="rating">
-                        <i class="fa fa-star" ></i>
-                        <i class="fa fa-star" ></i>
-                        <i class="fa fa-star" ></i>
-                        <i class="fa fa-star-half-o" ></i>
-                        <i class="fa fa-star-o" ></i>
-                    </div>
-                    <p>Rp. 100.000</p>
-                </a>
-			</div>
-
-			<div class="col-4">
-                <a href="<?=base_url()?>index.php/First/product_detail">
-                    <img src="https://images.unsplash.com/photo-1525904097878-94fb15835963?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
-                    <h4>Produk 1</h4>
-                    <div class="rating">
-                        <i class="fa fa-star" ></i>
-                        <i class="fa fa-star" ></i>
-                        <i class="fa fa-star" ></i>
-                        <i class="fa fa-star-half-o" ></i>
-                        <i class="fa fa-star-o" ></i>
-                    </div>
-                    <p>Rp. 100.000</p>
-                </a>
-			</div>
-
-			<div class="col-4">
-                 <a href="<?=base_url()?>index.php/First/product_detail">
-                    <img src="https://images.unsplash.com/photo-1525904097878-94fb15835963?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
-                    <h4>Produk 1</h4>
-                    <div class="rating">
-                        <i class="fa fa-star" ></i>
-                        <i class="fa fa-star" ></i>
-                        <i class="fa fa-star" ></i>
-                        <i class="fa fa-star-half-o" ></i>
-                        <i class="fa fa-star-o" ></i>
-                    </div>
-                    <p>Rp. 100.000</p>
-                </a>
-			</div>
-
+        <?php }?>
 		</div>
 
 		<div class="page-btn">
-			<span>1</span>
+			<!-- <span class="active">1</span>
 			<span>2</span>
 			<span>3</span>
-			<span>&#8594;</span>
-		</div>
+            <span>&#8594;</span> -->
+			<?php if ($paging->prev): ?>
+				<a href="<?= site_url("$this->controller/$func/$paging->prev"); ?>" aria-label="Previous"><span aria-hidden="true">&#8592;</span></a>
+            <?php endif; ?>
+			<?php for ($i=$paging->start_link; $i<=$paging->end_link; $i++): ?>
+				<a href="<?= ($i == 1) ? site_url("$this->controller/product/") : site_url("$this->controller/$func/$i"); ?>"><span <?= jecho($paging->page, $i, "class='active'"); ?>><?= $i; ?></span></a>
+			<?php endfor; ?>
+			<?php if ($paging->next): ?>
+				<a href="<?= site_url("$this->controller/$func/$paging->next"); ?>" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+			<?php endif; ?>
+			<?php if ($paging->end_link): ?>
+				<a href="<?=site_url("$this->controller/$func/$paging->end_link"); jecho($paging->page, $paging->end_link, "#"); ?>" aria-label="Last"><span aria-hidden="true">&#8594;</span></a>
+			<?php endif; ?>
+        </div>
 
 	</div>
 
