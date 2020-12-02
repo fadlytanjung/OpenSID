@@ -1,5 +1,42 @@
 <script src="<?= base_url()?>assets/js/jquery.validate.min.js"></script>
 <script src="<?= base_url()?>assets/js/localization/messages_id.js"></script>
+<script>
+$(document).ready(function() {
+	$('#file_browser5').click(function(e)
+	{
+		e.preventDefault();
+		$('#file5').click();
+	});
+
+	$('#file5').change(function()
+	{
+		$('#file_path5').val($(this).val());
+	});
+
+	$('#file_path5').click(function()
+	{
+		$('#file_browser5').click();
+	});
+
+
+	$('#file_browser6').click(function(e)
+	{
+		e.preventDefault();
+		$('#file6').click();
+	});
+
+	$('#file6').change(function()
+	{
+		$('#file_path6').val($(this).val());
+	});
+
+	$('#file_path6').click(function()
+	{
+		$('#file_browser6').click();
+	});
+});
+
+</script>
 <div class="content-wrapper">
 	<section class="content-header">
 		<h1>Tambah Produk</h1>
@@ -17,6 +54,8 @@
 			<form id="validasi" action="<?= $form_action?>" method="POST" enctype="multipart/form-data" class="form-horizontal">
 				<div class="box-body">
 					<?php $cid = @$_REQUEST["cid"]; ?>
+					<label class="col-sm-3 control-label">Produk</label>
+					<hr>
 					<div class="form-group">
 						<label class="col-sm-3 control-label">Kategori Produk</label>
 						<div class="col-sm-3">
@@ -36,11 +75,19 @@
 						</div>
 					</div>
                     <div class="form-group">
-						<label class="control-label col-sm-3" for="harga">Harga Produk</label>
+						<label class="control-label col-sm-3" for="harga">Harga Produk Per Satuan</label>
 						<div class="col-sm-8">
 							<input name="harga" class="form-control input-sm nomor_sk required" maxlength="100" placeholder="Harga Produk" value="<?= $produk[0]['harga'] ?>"  type="number"></input>
 						</div>
 					</div>
+
+					<div class="form-group">
+						<label class="control-label col-sm-3" for="nama">Satuan Produk</label>
+						<div class="col-sm-8">
+							<input name="satuan" class="form-control input-sm required" maxlength="100" placeholder="satuan Produk" value="<?= $produk[0]['satuan'] ?>"  type="text"></input>
+						</div>
+					</div>
+
                     <div class="form-group">
 						<label class="control-label col-sm-3" for="harga">Jenis</label>
 						<div class="col-sm-8">
@@ -52,10 +99,10 @@
 						<label class="control-label col-sm-3" for="gambar">Gambar Tampil</label>
 						<div class="col-sm-8">
                             <div class="input-group input-group-sm">
-                                    <input type="text" class="form-control" id="file_path" >
-                                    <input type="file" class="hidden" id="file" name="gambar">
+                                    <input type="text" class="form-control" id="file_path5" >
+                                    <input type="file" class="hidden" id="file5" name="gambar">
                                     <span class="input-group-btn">
-                                        <button type="button" class="btn btn-info btn-flat" id="file_browser"><i class="fa fa-search"></i> Browse</button>
+                                        <button type="button" class="btn btn-info btn-flat" id="file_browser5"><i class="fa fa-search"></i> Browse</button>
                                     </span>
                                 </div>
 						</div>
@@ -89,6 +136,58 @@
 								<option value="0">Tidak Aktif</option>
 								<!-- Default Value Aktif -->
 							</select>
+						</div>
+					</div>
+
+
+					<label class="col-sm-3 control-label">Penjual</label>
+					<hr>
+					<div class="form-group">
+						<label class="control-label col-sm-3" for="nama">Nama Penjual</label>
+						<div class="col-sm-8">
+							<input name="namapenjual" class="form-control input-sm nomor_sk required" maxlength="100" placeholder="Nama Penjual" value="<?= $produk[0]['namapenjual'] ?>" type="text"></input>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-sm-3" for="nama">Nomor Telepon</label>
+						<div class="col-sm-8">
+							<input name="nomortelpon" class="form-control input-sm nomor_sk required" maxlength="100" placeholder="Nomor Telephone" value="<?= $produk[0]['nomortelpon'] ?>" type="number"></input>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-sm-3" for="nama">Nomor WhatsApp</label>
+						<div class="col-sm-8">
+							<input name="nomorwa" class="form-control input-sm nomor_sk required" maxlength="100" placeholder="contoh format inputan : 62852xxxxxxxx" value="<?= $produk[0]['nomorwa'] ?>" type="number"></input>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-sm-3" for="email">Email</label>
+						<div class="col-sm-8">
+							<input name="email" class="form-control input-sm " maxlength="100" value="<?= $produk[0]['email'] ?>" placeholder="Email"  type="email"></input>
+						</div>
+					</div>
+
+
+					<div class="form-group">
+						<label class="col-sm-3 control-label" for="ndesc">Alamat Penjual</label>
+						<div class="col-sm-8">
+							<textarea id="ndesc" name="alamat" class="form-control input-sm required" placeholder="Alamat Penjual" rows="8"><?= $produk[0]['alamat'] ?></textarea>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-sm-3" for="poto">Poto Penjual</label>
+						<div class="col-sm-8">
+                            <div class="input-group input-group-sm">
+                                    <input type="text" class="form-control" id="file_path6" >
+                                    <input type="file" class="hidden" id="file6" name="poto">
+                                    <span class="input-group-btn">
+                                        <button type="button" class="btn btn-info btn-flat" id="file_browser6"><i class="fa fa-search"></i> Browse</button>
+                                    </span>
+                                </div>
 						</div>
 					</div>
 				</div>

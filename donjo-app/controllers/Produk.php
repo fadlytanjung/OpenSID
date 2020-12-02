@@ -99,6 +99,7 @@ class Produk extends Admin_Controller {
     }
 
     public function insert(){
+        // Produk
         $kategori = $this->input->post('kategori');
         $nama = $this->input->post('nama');
         $harga = $this->input->post('harga');
@@ -106,11 +107,21 @@ class Produk extends Admin_Controller {
         $rating = $this->input->post('rating');
         $dekripsi = $this->input->post('dekripsi');
         $status = $this->input->post('status');
+        $satuan = $this->input->post('satuan');
+
+        // Penjual
+        $namapenjual = $this->input->post('namapenjual');
+        $nomortelpon = $this->input->post('nomortelpon');
+        $nomorwa = $this->input->post('nomorwa');
+        $email = $this->input->post('email');
+        $alamat = $this->input->post('alamat');
+
 
         $config['upload_path']          = LOKASI_PRODUK;
         $config['allowed_types']        = 'gif|jpg|jpeg|png|mp4|flv|avi';
         $config['max_size']             = 100000000;
         $config['file_name']            = "produk-" . date('Y-m-d-H-i-s');
+
         $this->upload->initialize($config);
         if ($this->upload->do_upload('gambar'))
 		{ 
@@ -119,6 +130,18 @@ class Produk extends Admin_Controller {
             $gambar = "";
         }
 
+        $config1['upload_path']          = LOKASI_PENJUAL;
+        $config1['allowed_types']        = 'gif|jpg|jpeg|png|mp4|flv|avi';
+        $config1['max_size']             = 100000000;
+        $config1['file_name']            = "penjual-" . date('Y-m-d-H-i-s');
+       
+        $this->upload->initialize($config1);
+        if ($this->upload->do_upload('poto'))
+		{ 
+            $poto = $this->upload->data('file_name');
+        }else{
+            $poto = "";
+        }
        
         $data = array(
             'kategori' => $kategori ,
@@ -129,7 +152,15 @@ class Produk extends Admin_Controller {
             'rating' => $rating,
             'status' => $status,
             'gambar' => $gambar,
-            'galeri' => ''
+            'galeri' => '',
+            'namapenjual' => $namapenjual,
+            'nomortelpon' => $nomortelpon,
+            'nomorwa' => $nomorwa,
+            'email' => $email,
+            'alamat' => $alamat,
+            'satuan' => $satuan,
+            'poto' => $poto
+
         );
         $this->dbObject->create_general('produk', $data);
 		redirect('produk');
@@ -142,6 +173,11 @@ class Produk extends Admin_Controller {
     }
 
     public function hapus($id){
+        $gambar_id = $this->dbObject->get_by_id_general('produk', 'id', $id);
+      
+            unlink(LOKASI_PRODUK.$gambar_id[0]['gambar']);
+            unlink(LOKASI_PENJUAL.$gambar_id[0]['poto']);
+
         if($this->dbObject->delete_general("produk", "id", $id)){
             redirect("produk");
         }
@@ -170,6 +206,7 @@ class Produk extends Admin_Controller {
     }
 
     public function update($id){
+        // Produk
         $kategori = $this->input->post('kategori');
         $nama = $this->input->post('nama');
         $harga = $this->input->post('harga');
@@ -177,15 +214,15 @@ class Produk extends Admin_Controller {
         $rating = $this->input->post('rating');
         $dekripsi = $this->input->post('dekripsi');
         $status = $this->input->post('status');
+        $satuan = $this->input->post('satuan');
 
-        $config['upload_path']          = LOKASI_PRODUK;
-        $config['allowed_types']        = 'gif|jpg|jpeg|png|mp4|flv|avi';
-        $config['max_size']             = 100000000;
-        $config['file_name']            = "produk-" . date('Y-m-d-H-i-s');
-       
-        
-        
-       
+        // Penjual
+        $namapenjual = $this->input->post('namapenjual');
+        $nomortelpon = $this->input->post('nomortelpon');
+        $nomorwa = $this->input->post('nomorwa');
+        $email = $this->input->post('email');
+        $alamat = $this->input->post('alamat');
+        // $data = array();
         $data = array(
             'kategori' => $kategori ,
             'nama' => $nama,
@@ -194,8 +231,18 @@ class Produk extends Admin_Controller {
             'jenis' => $jenis,
             'rating' => $rating,
             'status' => $status,
-            'galeri' => ''
+            'galeri' => '',
+            'namapenjual' => $namapenjual,
+            'nomortelpon' => $nomortelpon,
+            'nomorwa' => $nomorwa,
+            'email' => $email,
+            'alamat' => $alamat,
+            'satuan' => $satuan,
         );
+        $config['upload_path']          = LOKASI_PRODUK;
+        $config['allowed_types']        = 'gif|jpg|jpeg|png|mp4|flv|avi';
+        $config['max_size']             = 100000000;
+        $config['file_name']            = "produk-" . date('Y-m-d-H-i-s');
 
         $this->upload->initialize($config);
         if ($this->upload->do_upload('gambar'))
@@ -203,9 +250,24 @@ class Produk extends Admin_Controller {
             $gambar = $this->upload->data('file_name');
             $data['gambar'] = $gambar;
             $gambar_id = $this->dbObject->get_by_id_general('produk', 'id', $id);
-            if($gambar_id){
+            
                 unlink(LOKASI_PRODUK.$gambar_id[0]['gambar']);
-            }
+        }
+
+        $config1['upload_path']          = LOKASI_PENJUAL;
+        $config1['allowed_types']        = 'gif|jpg|jpeg|png|mp4|flv|avi';
+        $config1['max_size']             = 100000000;
+        $config1['file_name']            = "penjual-" . date('Y-m-d-H-i-s');
+
+
+        $this->upload->initialize($config1);
+        if ($this->upload->do_upload('poto'))
+		{ 
+            $foto = $this->upload->data('file_name');
+            $data['poto'] = $foto;
+            $gambar_id1 = $this->dbObject->get_by_id_general('produk', 'id', $id);
+            
+                unlink(LOKASI_PRODUK.$gambar_id1[0]['poto']);
         }
         if($this->dbObject->update_general('produk', 'id', $id, $data)){
             redirect('produk');

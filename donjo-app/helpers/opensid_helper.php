@@ -72,6 +72,7 @@ define("LOKASI_MEDIA", 'desa/upload/media/');
 define("LOKASI_SIMBOL_LOKASI", 'desa/upload/gis/lokasi/point/');
 define("LOKASI_SIMBOL_LOKASI_DEF", 'assets/images/gis/point/');
 define("LOKASI_PRODUK", 'assets/product/images/');
+define("LOKASI_PENJUAL", 'assets/product/images/penjual');
 
 // Kode laporan statistik
 define('JUMLAH', 666);

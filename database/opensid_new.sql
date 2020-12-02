@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 26, 2020 at 08:17 PM
+-- Generation Time: Dec 02, 2020 at 09:46 PM
 -- Server version: 10.4.10-MariaDB
 -- PHP Version: 7.2.25
 
@@ -1624,7 +1624,7 @@ INSERT INTO `artikel` (`id`, `gambar`, `isi`, `enabled`, `tgl_upload`, `id_kateg
 (96, '1472782915artikel-3-1.jpeg', '<p>Dalam rapat pembahasan komitmen perekrutan karyawan hotel pada tanggal 24 Agustus 2016 di kantor desa sengigi telah menyepakati beberapa komitmen bersama diantaranya sebagai berikut:</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>1. Dalam perekrutan karyawan, pihak hotel harus memprioritaskan masyarakat senggigi minimal 35%</p>\n<p>2. Pihak Hotel harus mengikuti program perencanaan tenaga kerja desa senggigi sesua dengan VISI dan MISI desa</p>\n<p>3. Pihak hotel harus melakukan kordinasi dengan pemerintah desa ketika perekrutan karyawan&nbsp;</p>\n<p>4. Pihak Hotel harus melakukan pelatihan bagi calon karyawan, khususnya karyawan yang berasal dari desa sengggigi</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>Bagi rekan-rekan pemuda dan masyarakat harap melakukan kordinasi dengan pemerintah desa terkait dengan beberapa hasil pertemuan dalam membangun komitme dengan pihak hotel, jika ada hal mendesak terkait beberapa syarat ketentuan perekrutan, rekan-rekan pemuda dan masyarakat bisa menghubungi kami di kantor desa..</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>', 1, '2016-08-24 06:55:10', 4, 1, 'Rapat membangun Komitmen antara Karang Taruna Desa Senggigi dengan Taruna Hotel', 3, '1472018109IMG-20160824-WA0000.jpg', '1472018109', '1472018109', '', '', 1, 'rapat-membangun-komitmen-antara-karang-taruna-desa-senggigi-dengan-taruna-hotel', 0),
 (97, '1472019299', '<p>Halaman ini berisi tautan menuju informasi mengenai Basis Data Desa. Ada dua jenis data yang dimuat dalam sistem ini, yakni basis data kependudukan dan basis data sumber daya desa. Sila klik pada tautan berikut untuk mendapatkan tampilan data statistik per kategori.</p>\r\n<ol>\r\n<li>Data Wilayah Administratif&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;</li>\r\n<li>Data Pendidikan&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;</li>\r\n<li>Data Pekerjaan&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;</li>\r\n<li>Data Golongan Darah&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;</li>\r\n<li>Data Agama&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;</li>\r\n<li>Data Jenis Kelamin&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;</li>\r\n<li>Data Kelompok Umur&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;</li>\r\n<li>Data Penerima Raskin&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;</li>\r\n<li>Data Penerima BPJS &nbsp; &nbsp; &nbsp; &nbsp;</li>\r\n<li>Data Warga Negara &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;</li>\r\n</ol>\r\n<p>Data yang tampil adalah statistik yang didapatkan dari proses olah data dasar yang dilakukan secara&nbsp;<em>offline</em>&nbsp;di kantor desa secara rutin/harian. Data dasar di kantor desa diunggah ke dalam sistem&nbsp;<em>online</em>&nbsp;di website ini secara berkala. Sila hubungi kontak pemerintah desa untuk mendapatkan data dan informasi desa termutakhir.</p>', 1, '2016-08-24 07:14:59', 999, 1, 'Data Desa', 0, '1472019299', '1472019299', '1472019299', '', '', 1, 'data-desa', 1),
 (98, '1549419108_desa.jpg', '<p>Wilayah desa berisi tentang penjelasan dan deskripsi letak wilayah desa. contohnya sebagai berikut :<br />Batas-batas :<br />Utara&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Kelurahan a<br />Timur &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: Desa b<br />Selatan&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Desa c<br />Barat&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Kelurahan d dan Desa e<br />Luas Wilayah Desa Penglatan&nbsp;&nbsp; : 186,193 Ha<br />Letak Dan Batas Desa x<br />Desa Penglatan terletak pada posisi 115. 7.20 LS 8. 7.10 BT, dengan ketinggian kurang lebih 250 M diatas permukaan laut.</p>\r\n<p>Peta Desa:</p>\r\n<p><iframe src=\"https://www.google.co.id/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Logandu,+Karanggayam&amp;aq=0&amp;oq=logandu&amp;sll=-2.550221,118.015568&amp;sspn=52.267573,80.332031&amp;t=h&amp;ie=UTF8&amp;hq=&amp;hnear=Logandu,+Karanggayam,+Kebumen,+Central+Java&amp;z=14≪=-7.55854,109.634173&amp;output=embed\" width=\"600\" height=\"450\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\"></iframe></p>', 1, '2016-08-26 07:28:14', 999, 1, 'Wilayah Desa', 0, '1472192894', '1472192894', '1472192894', '', '', 1, 'wilayah-desa', 0),
-(99, '1472228892Raja Lombok 1902.jpg', '<p style=\"text-align: justify;\" align=\"center\">Sejarah telah mencatat bahwa Pulau Lombok pernah menjadi wilayah kekuasaan Kerajaan Karang Asem Bali yang berkedudukan di Cakranegara dengan seorang raja bernama Anak Agung Gde Jelantik. Berakhirnya <strong>kekuasaan</strong> Kerajaan Karang Asem Bali di Pulau Lombok setelah datangnya Belanda pada Tahun 1891, dimana Belanda pada waktu itu ingin menguasai Pulau Lombok dengan dalih pura-pura membantu rakyat Lombok yang dianggap tertindas oleh Pemerintahan Raja Lombok yaitu Anak Agung Gede Jelantik.</p>\r\n<p style=\"text-align: justify;\">Pada masa kekuasaan Raja Lombok yaitu Anak Agung Gde Jelantik, wilayah Desa Senggigi ( Dusun Mangsit, Kerandangan, Senggigi dan Dusun Loco) masih bergabung dengan Desa Senteluk yang sekarang menjadi Desa Meninting . Sedangkan pada tahun 1962 Desa Senteluk pecah menjadi 2 (Dua) desa yaitu Desa Meninting dan Desa Batulayar dan Dusun Mangsit,Kerandangan,Senggigi dan Dusun Loco bergabung ke Desa Batulayar.&nbsp;</p>\r\n<p style=\"text-align: justify;\">Pemberian nama Desa Batulayar pada waktu itu yang lazim disebut dengan Pemusungan/Kepala Dea Batulayar berdasarkan hasil musyawarah nama Batulayar diambil dari nama tempat yang amat terkenal yaitu Makam Batulayar yang sampai saat ini banyak dikunjungi oleh masyarakat Pulau Lombok pada khususnya dan Masyarakat Nusa Tenggara Barat pada umumnya.</p>\r\n<p style=\"text-align: justify;\">Pada tahun 2001 Desa Batulayar dimekarkan menjadi 2 (dua) yaitu Desa Batulayar (sebagai Desa Induk) dan Desa Senggigi (sebagai Desa Persiapan) dengan SK.Bupati No : 30 Tahun 2001 tanggal 17 Mei 2001, yang pada waktu itu yang menjadi pejabat Kepala Desa Senggigi ialah <strong>H. ARIF RAHMAN, S.IP</strong>., dengan jumlah dusun sebanyak 3 dusun, yaitu :</p>\r\n<p>1. Dusun Senggigi</p>\r\n<p>2. Dusun Kerandangan</p>\r\n<p>3. Dusun Mangsit</p>\r\n<p>Selanjutnya pada tanggal 30 Juli 2003 Pejabat Kepala Desa Senggigi dari <strong>H. ARIF RAHMAN, S.IP</strong> diganti oleh Saudara<strong> ARIFIN</strong> dengan SK. Bupati Lombok Barat No : 409/66/pem/2003. Berhubung Desa Senggigi masih bersifat Desa Persiapan, maka berdasarkan hasil musyawarah desa, tertanggal 15 Desember 2003 , maka pada tanggal 22 Desember 2003 Desa Senggigi mengadakan Pemilihan Kepala Desa devinitif yang pertama kali dipimpin oleh&nbsp;<strong>HAJI JUNAIDI</strong>&nbsp;terpilih&nbsp;dengan SK. Bupati Lombok Barat No :01/01/Pem/2004 tertanggal 2 Januari 2004&nbsp;sampai pada tahun 2008.&nbsp;</p>\r\n<p style=\"text-align: justify;\">Selanjutnya pada tahun 2008, Desa Senggigi mengadakan pemilihan Kepala Desa Senggigi yang kedua dan dimenangkan oleh Bapak <strong>H. MUTAKIR AHMAD</strong>&nbsp;dengan&nbsp;SK. Bupati Lombok Barat No :1320/48/Pem./2008 tertanggal 23 Desember 2008, Periode 2008-2014. &nbsp;Kemudian Kepala desa terpilih Periode 2015 s/d 2021&nbsp;adalah <strong>MUHAMMAD ILHAM</strong>&nbsp;dengan SK. Bupati Lombok Barat No : 160/04/BPMPD/15 tanggal 27 Januari 2015 kini baru menjabat 2 (dua) bulan.</p>\r\n<p style=\"text-align: justify;\">Demikian selanyang pandang atau sejarah singkat Desa Senggigi yang dapat kami sampaikan kepada para pegiat Medsos, semoga dapat bermanfaat untuk kita semua, terima kasih.</p>\r\n<p style=\"text-align: justify;\" align=\"center\">&nbsp;</p>\r\n<p style=\"text-align: justify;\" align=\"center\">&nbsp;</p>', 1, '2016-08-26 08:38:09', 999, 1, 'Sejarah Desa', 3, '1472229325490125_20121123041539.jpg', '1472197089', '1472197089', '', '', 1, 'sejarah-desa', 2);
+(99, '1472228892Raja Lombok 1902.jpg', '<p style=\"text-align: justify;\" align=\"center\">Sejarah telah mencatat bahwa Pulau Lombok pernah menjadi wilayah kekuasaan Kerajaan Karang Asem Bali yang berkedudukan di Cakranegara dengan seorang raja bernama Anak Agung Gde Jelantik. Berakhirnya <strong>kekuasaan</strong> Kerajaan Karang Asem Bali di Pulau Lombok setelah datangnya Belanda pada Tahun 1891, dimana Belanda pada waktu itu ingin menguasai Pulau Lombok dengan dalih pura-pura membantu rakyat Lombok yang dianggap tertindas oleh Pemerintahan Raja Lombok yaitu Anak Agung Gede Jelantik.</p>\r\n<p style=\"text-align: justify;\">Pada masa kekuasaan Raja Lombok yaitu Anak Agung Gde Jelantik, wilayah Desa Senggigi ( Dusun Mangsit, Kerandangan, Senggigi dan Dusun Loco) masih bergabung dengan Desa Senteluk yang sekarang menjadi Desa Meninting . Sedangkan pada tahun 1962 Desa Senteluk pecah menjadi 2 (Dua) desa yaitu Desa Meninting dan Desa Batulayar dan Dusun Mangsit,Kerandangan,Senggigi dan Dusun Loco bergabung ke Desa Batulayar.&nbsp;</p>\r\n<p style=\"text-align: justify;\">Pemberian nama Desa Batulayar pada waktu itu yang lazim disebut dengan Pemusungan/Kepala Dea Batulayar berdasarkan hasil musyawarah nama Batulayar diambil dari nama tempat yang amat terkenal yaitu Makam Batulayar yang sampai saat ini banyak dikunjungi oleh masyarakat Pulau Lombok pada khususnya dan Masyarakat Nusa Tenggara Barat pada umumnya.</p>\r\n<p style=\"text-align: justify;\">Pada tahun 2001 Desa Batulayar dimekarkan menjadi 2 (dua) yaitu Desa Batulayar (sebagai Desa Induk) dan Desa Senggigi (sebagai Desa Persiapan) dengan SK.Bupati No : 30 Tahun 2001 tanggal 17 Mei 2001, yang pada waktu itu yang menjadi pejabat Kepala Desa Senggigi ialah <strong>H. ARIF RAHMAN, S.IP</strong>., dengan jumlah dusun sebanyak 3 dusun, yaitu :</p>\r\n<p>1. Dusun Senggigi</p>\r\n<p>2. Dusun Kerandangan</p>\r\n<p>3. Dusun Mangsit</p>\r\n<p>Selanjutnya pada tanggal 30 Juli 2003 Pejabat Kepala Desa Senggigi dari <strong>H. ARIF RAHMAN, S.IP</strong> diganti oleh Saudara<strong> ARIFIN</strong> dengan SK. Bupati Lombok Barat No : 409/66/pem/2003. Berhubung Desa Senggigi masih bersifat Desa Persiapan, maka berdasarkan hasil musyawarah desa, tertanggal 15 Desember 2003 , maka pada tanggal 22 Desember 2003 Desa Senggigi mengadakan Pemilihan Kepala Desa devinitif yang pertama kali dipimpin oleh&nbsp;<strong>HAJI JUNAIDI</strong>&nbsp;terpilih&nbsp;dengan SK. Bupati Lombok Barat No :01/01/Pem/2004 tertanggal 2 Januari 2004&nbsp;sampai pada tahun 2008.&nbsp;</p>\r\n<p style=\"text-align: justify;\">Selanjutnya pada tahun 2008, Desa Senggigi mengadakan pemilihan Kepala Desa Senggigi yang kedua dan dimenangkan oleh Bapak <strong>H. MUTAKIR AHMAD</strong>&nbsp;dengan&nbsp;SK. Bupati Lombok Barat No :1320/48/Pem./2008 tertanggal 23 Desember 2008, Periode 2008-2014. &nbsp;Kemudian Kepala desa terpilih Periode 2015 s/d 2021&nbsp;adalah <strong>MUHAMMAD ILHAM</strong>&nbsp;dengan SK. Bupati Lombok Barat No : 160/04/BPMPD/15 tanggal 27 Januari 2015 kini baru menjabat 2 (dua) bulan.</p>\r\n<p style=\"text-align: justify;\">Demikian selanyang pandang atau sejarah singkat Desa Senggigi yang dapat kami sampaikan kepada para pegiat Medsos, semoga dapat bermanfaat untuk kita semua, terima kasih.</p>\r\n<p style=\"text-align: justify;\" align=\"center\">&nbsp;</p>\r\n<p style=\"text-align: justify;\" align=\"center\">&nbsp;</p>', 1, '2016-08-26 08:38:09', 999, 1, 'Sejarah Desa', 3, '1472229325490125_20121123041539.jpg', '1472197089', '1472197089', '', '', 1, 'sejarah-desa', 3);
 
 -- --------------------------------------------------------
 
@@ -7707,7 +7707,8 @@ INSERT INTO `log_bulanan` (`id`, `pend`, `wni_lk`, `wni_pr`, `kk`, `tgl`, `kk_lk
 (1606, 97, 46, 51, 37, '2020-06-30 17:59:28', 28, 9, 0, 0),
 (1607, 97, 46, 51, 37, '2020-07-31 17:09:12', 28, 9, 0, 0),
 (1608, 97, 46, 51, 37, '2020-08-31 17:33:33', 28, 9, 0, 0),
-(1610, 97, 46, 51, 37, '2020-11-05 06:45:20', 28, 9, 0, 0);
+(1610, 97, 46, 51, 37, '2020-11-05 06:45:20', 28, 9, 0, 0),
+(1611, 97, 46, 51, 37, '2020-11-30 18:14:26', 28, 9, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -8334,11 +8335,18 @@ CREATE TABLE `produk` (
   `kategori` varchar(100) NOT NULL,
   `nama` varchar(225) NOT NULL,
   `harga` int(225) NOT NULL,
+  `satuan` varchar(10) DEFAULT NULL,
   `deskripsi` text DEFAULT NULL,
   `jenis` varchar(100) NOT NULL,
   `rating` int(6) NOT NULL,
   `gambar` varchar(100) NOT NULL,
   `galeri` text DEFAULT NULL,
+  `namapenjual` varchar(100) DEFAULT NULL,
+  `nomortelpon` varchar(20) DEFAULT NULL,
+  `nomorwa` varchar(20) DEFAULT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `alamat` text DEFAULT NULL,
+  `poto` varchar(100) DEFAULT NULL,
   `status` enum('0','1') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -8346,28 +8354,23 @@ CREATE TABLE `produk` (
 -- Dumping data for table `produk`
 --
 
-INSERT INTO `produk` (`id`, `kategori`, `nama`, `harga`, `deskripsi`, `jenis`, `rating`, `gambar`, `galeri`, `status`) VALUES
-(1, 'Kategori B', 'Cangkol', 1000000, 'Ini adalah jenis cangkol yang berkualitas dan baik ', 'Alat ', 5, 'produk-2020-11-26-15-31-21.png', '', '1'),
-(2, 'Kategori C', 'ad', 123, 'SFASDF', 'ASDF', 3, 'produk-2020-11-26-15-01-17.png', '', '1'),
-(3, 'Kategori C', 'asdf', 123, 'asdfsdf', 'asdf', 5, 'produk-2020-11-26-15-00-49.png', '', '1'),
-(4, 'Kategori B', 'asfa', 123123, 'fsadfasf', 'asfsf', 3, 'produk-2020-11-26-15-00-34.png', '', '1'),
-(5, 'Kategori D', 'asfd', 213, 'asfasdf', 'asdf', 3, 'produk-2020-11-26-15-00-17.png', '', '1'),
-(6, 'Kategori B', 'sadfsa', 123, 'asdfas', 'sadf', 2, 'produk-2020-11-26-15-00-00.png', '', '1'),
-(9, 'Kategori B', 'Barang tani a', 1231231, 'asdfasdf', '123asfasf', 3, 'produk-2020-11-26-14-49-04.png', '', '1'),
-(10, 'Kategori A', 'adfsa', 123, 'fasf', '123', 3, 'produk-2020-11-26-17-30-52.png', '', '1'),
-(11, 'Kategori B', 'asf', 1231, 'asdfasdf', 'fasfd', 2, 'produk-2020-11-26-17-31-10.png', '', '1'),
-(12, 'Kategori B', 'asf', 1231, 'asff', 'sf', 4, 'produk-2020-11-26-17-31-29.png', '', '1'),
-(13, 'Kategori B', 'asfd', 123, 'asdfasdf', 'fasdf', 2, 'produk-2020-11-26-17-31-44.jpg', '', '1'),
-(14, 'Kategori C', 'asfdasdf', 12312, 'asdfasdf', 'asdfasdf', 3, 'produk-2020-11-26-17-31-56.png', '', '1'),
-(15, 'Kategori A', 'asfas', 123, 'asfasdf', 'sadfs', 3, 'produk-2020-11-26-17-32-16.png', '', '1'),
-(16, 'Kategori A', 'asfd', 1231, 'asfdasfd', 'sfa', 2, 'produk-2020-11-26-17-32-30.png', '', '1'),
-(17, 'Kategori A', 'asfd', 123123, 'asdfasfd', 'safas', 3, 'produk-2020-11-26-17-32-46.jpg', '', '1'),
-(18, 'Kategori B', 'asdf', 123, 'asdfasdf', 'safas', 4, 'produk-2020-11-26-17-32-57.jpg', '', '1'),
-(19, 'Kategori B', 'fasdf', 123, 'asdfasdf', 'asfd', 3, 'produk-2020-11-26-17-33-08.jpg', '', '1'),
-(20, 'Kategori C', 'asfs', 1231, 'asdfsafd', 'safas', 2, 'produk-2020-11-26-17-33-24.jpg', '', '1'),
-(21, 'Kategori B', 'asfasf', 1231, 'asfd', 'asdfasf', 1, 'produk-2020-11-26-17-33-37.jpg', '', '1'),
-(22, 'Kategori C', 'asdf', 123, 'asfasdf', 'sadfa', 3, 'produk-2020-11-26-17-33-56.jpg', '', '1'),
-(23, 'Kategori C', 'asf', 123, 'asdfasdf', 'asfsafd', 3, 'produk-2020-11-26-17-34-09.jpg', '', '1');
+INSERT INTO `produk` (`id`, `kategori`, `nama`, `harga`, `satuan`, `deskripsi`, `jenis`, `rating`, `gambar`, `galeri`, `namapenjual`, `nomortelpon`, `nomorwa`, `email`, `alamat`, `poto`, `status`) VALUES
+(1, 'Kategori B', 'Cangkol', 1000000, NULL, 'Ini adalah jenis cangkol yang berkualitas dan baik ', 'Alat ', 5, 'produk-2020-11-26-15-31-21.png', '', NULL, NULL, NULL, NULL, NULL, NULL, '1'),
+(4, 'Kategori B', 'asfa', 123123, NULL, 'fsadfasf', 'asfsf', 3, 'produk-2020-11-26-15-00-34.png', '', NULL, NULL, NULL, NULL, NULL, NULL, '1'),
+(5, 'Kategori D', 'asfd', 213, NULL, 'asfasdf', 'asdf', 3, 'produk-2020-11-26-15-00-17.png', '', NULL, NULL, NULL, NULL, NULL, NULL, '1'),
+(6, 'Kategori B', 'sadfsa', 123, NULL, 'asdfas', 'sadf', 2, 'produk-2020-11-26-15-00-00.png', '', NULL, NULL, NULL, NULL, NULL, NULL, '1'),
+(9, 'Kategori B', 'Barang tani a', 1231231, NULL, 'asdfasdf', '123asfasf', 3, 'produk-2020-11-26-14-49-04.png', '', NULL, NULL, NULL, NULL, NULL, NULL, '1'),
+(11, 'Kategori B', 'asf', 1231, NULL, 'asdfasdf', 'fasfd', 2, 'produk-2020-11-26-17-31-10.png', '', NULL, NULL, NULL, NULL, NULL, NULL, '1'),
+(12, 'Kategori B', 'asf', 1231, NULL, 'asff', 'sf', 4, 'produk-2020-11-26-17-31-29.png', '', NULL, NULL, NULL, NULL, NULL, NULL, '1'),
+(14, 'Kategori C', 'asfdasdf', 12312, NULL, 'asdfasdf', 'asdfasdf', 3, 'produk-2020-11-26-17-31-56.png', '', NULL, NULL, NULL, NULL, NULL, NULL, '1'),
+(15, 'Kategori A', 'asfas', 123, NULL, 'asfasdf', 'sadfs', 3, 'produk-2020-11-26-17-32-16.png', '', NULL, NULL, NULL, NULL, NULL, NULL, '1'),
+(16, 'Kategori A', 'asfd', 1231, NULL, 'asfdasfd', 'sfa', 2, 'produk-2020-11-26-17-32-30.png', '', NULL, NULL, NULL, NULL, NULL, NULL, '1'),
+(17, 'Kategori A', 'asfd', 123123, NULL, 'asdfasfd', 'safas', 3, 'produk-2020-11-26-17-32-46.jpg', '', NULL, NULL, NULL, NULL, NULL, NULL, '1'),
+(20, 'Kategori C', 'asfs', 1231, NULL, 'asdfsafd', 'safas', 2, 'produk-2020-11-26-17-33-24.jpg', '', NULL, NULL, NULL, NULL, NULL, NULL, '1'),
+(21, 'Kategori B', 'asfasf', 1231, NULL, 'asfd', 'asdfasf', 1, 'produk-2020-11-26-17-33-37.jpg', '', NULL, NULL, NULL, NULL, NULL, NULL, '1'),
+(31, 'Kategori A', 'asfda1', 23, 'saf', 'asdf', 'sadf', 2, 'produk-2020-12-02-11-48-49.jpg', '', 'asdf', '1234', '24', 'a@a', 'asdf', 'penjual-2020-12-02-11-48-49.jpg', '1'),
+(32, 'Kategori D', 'tes ini mah', 123123123, 'asfd', 'asdf', 'asfd', 4, 'produk-2020-12-02-11-50-38.jpg', '', 'asdf', '123', '123', 'a3@a', 'asfdadf', 'penjual-2020-12-02-11-50-38.jpg', '1'),
+(33, 'Kategori A', 'adfa', 123, 'asdf', 'asdf', 'asf', 4, 'produk-2020-12-02-11-51-29.jpg', '', 'asdfa', '123', '213', 'a@a', 'asdf', 'penjual-2020-12-02-11-51-29.jpg', '1');
 
 -- --------------------------------------------------------
 
@@ -9114,7 +9117,8 @@ INSERT INTO `sys_traffic` (`Tanggal`, `ipAddress`, `Jumlah`) VALUES
 ('2020-11-19', '::1{}', 1),
 ('2020-11-21', '', 2),
 ('2020-11-25', '::1{}', 1),
-('2020-11-26', '::1{}', 1);
+('2020-11-26', '::1{}', 1),
+('2020-12-01', '::1{}', 1);
 
 -- --------------------------------------------------------
 
@@ -16484,7 +16488,7 @@ ALTER TABLE `line`
 -- AUTO_INCREMENT for table `log_bulanan`
 --
 ALTER TABLE `log_bulanan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1611;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1612;
 
 --
 -- AUTO_INCREMENT for table `log_ekspor`
@@ -16616,7 +16620,7 @@ ALTER TABLE `polygon`
 -- AUTO_INCREMENT for table `produk`
 --
 ALTER TABLE `produk`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 
 --
 -- AUTO_INCREMENT for table `program`

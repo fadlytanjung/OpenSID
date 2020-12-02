@@ -45,7 +45,7 @@ https://templatemo.com/tm-518-sentra
                     <ul class="nav navbar-nav">
                         <li><a href="#top">SELAMAT DATANG</a></li>
                         <li><a href="#featured">ADMINISTRASI</a></li>
-                        <li><a href="#projects">PEMBAYARAN</a></li>
+                        <!-- <li><a href="#projects">PEMBAYARAN</a></li> -->
                         <li><a href="#produk">PRODUK</a></li>
                         <li><a href="#kabar">KABAR DESA</a></li>
                         <li><a href="#website_desa">WEBSITE DESA</a></li>
@@ -75,13 +75,13 @@ https://templatemo.com/tm-518-sentra
                             ADMINISTRASI
                         </a>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a href="#projects">
                             <span class="rect"></span>
                             <span class="circle"></span>
                             PEMBAYARAN
                         </a>
-                    </li>
+                    </li> -->
                     <li>
                         <a href="#produk">
                             <span class="rect"></span>
@@ -129,11 +129,11 @@ https://templatemo.com/tm-518-sentra
                         <div class="info">
                         <div>
                           <h1>Website<br>Desa</h1>
-                          <p>Ayo bangun desa Anda! Berdayakan potensinya, ketahui data statistiknya, ekspor komoditas unggulannya,<br> ikuti kabar terbarunya, mudahkan urusan warganya dengan sistem yang terpadu, online dan terintegrasi.</p>
+                          <h3><p>Ayo bangun desa Anda! Berdayakan potensinya, ketahui data statistiknya, ekspor komoditas unggulannya,<br> ikuti kabar terbarunya, mudahkan urusan warganya dengan sistem yang terpadu, online dan terintegrasi.</p></h3>
                           <div  class="btn-group" role="group">
                               <div class="white-button button">
-                                  <a href="#featured" class="btn shortcut ">ADMINISTRASI</a>
-                                  <a href="#projects" class="btn shortcut ">PEMBAYARAN</a>
+                                  <a href="<?=base_url()?>index.php/siteman" class="btn shortcut ">ADMINISTRASI</a>
+                                  <!-- <a href="#projects" class="btn shortcut ">PEMBAYARAN</a> -->
                                   <a href="#produk" class="btn shortcut ">PRODUK</a>
                                   <a href="<?=base_url()?>index.php/First/kabar_desa" class="btn shortcut ">KABAR DESA</a>
                                   <a href="#website_desa" class="btn shortcut ">WEBSITE DESA</a>
@@ -166,20 +166,14 @@ https://templatemo.com/tm-518-sentra
                         <div class="item">
                              <div  class="btn-group" role="group">
                               <div class="accent-button button">
-                                <a href="#kabar ">LOGIN KE APLIKASI</a>
+                                <a href="<?=base_url()?>index.php/siteman ">LOGIN KE APLIKASI</a>
                             </div>
                           </div>
                         </div>
                         <br><br><br><br>
                 </div>
             </section>
-            <section id="projects" class="content-section">
-               <!--  <div class="section-heading">
-                    <h1>Recent<br><em>Projects</em></h1>
-                    <p>Praesent pellentesque efficitur magna, 
-                    <br>sed pellentesque neque malesuada vitae.</p>
-                </div> -->
-
+            <!-- <section id="projects" class="content-section">
                 <br><br>
                 <div class="section-heading">
                     <h1><em>PEMBAYARAN</em></h1>
@@ -202,8 +196,7 @@ https://templatemo.com/tm-518-sentra
                         </div>
                         <br><br><br><br>
                 </div>
-                          
-            </section>
+            </section> -->
             <section id="produk" class="content-section">
                 <div class="w-100">
                      <br><br>
@@ -271,7 +264,7 @@ https://templatemo.com/tm-518-sentra
                         <div class="item">
                              <div  class="btn-group" role="group">
                               <div class="accent-button button">
-                                <a href="#kabar">GALERI WEBSITE DESA</a>
+                                <a href="<?=base_url()?>index.php/First/kabar_desa">GALERI WEBSITE DESA</a>
                             </div>
                           </div>
                         </div>

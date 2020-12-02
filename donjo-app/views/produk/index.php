@@ -22,7 +22,7 @@
 						<li><a href="<?=base_url()?>">Tentang</a></li>
 					</ul>
 				</nav>
-				<img src="https://image.flaticon.com/icons/png/512/126/126083.png" width="30px" height="30px">
+				<!-- <img src="https://image.flaticon.com/icons/png/512/126/126083.png" width="30px" height="30px"> -->
 				<img src="https://icons-for-free.com/iconfiles/png/512/menu+move+handle+order+icon-1320184295106417831.png" class="menu-icon" onclick="menuToggle()">
 			</div>
 		</div>
@@ -39,19 +39,22 @@
 			</select>
 		</div>
 		<div class="row-p">
-        <?php foreach($main as $item){?>
-			<div class="col-4">
-                <a href="<?=base_url()?>index.php/First/product_detail/<?=$item['id']?>">
-                    <img src="<?=base_url()?>assets/product/images/<?=$item['gambar']?>">
-                    <h4><?=$item['nama']?></h4>
-                    <div class="rating">
-                        <?php for($i = 0; $i<$item['rating']; $i++){?>
-                            <i class="fa fa-star" ></i>
-                        <?php $i++;}?>
-                    </div>
-                    <p><?=rupiah($item['harga'])?></p>
-                </a>
-			</div>
+		<?php foreach($main as $item){?>
+				
+					<div class="col-4">
+						<a href="<?=base_url()?>index.php/First/product_detail/<?=$item['id']?>">
+							<img src="<?=base_url()?>assets/product/images/<?=$item['gambar']?>">
+							<h4><?=$item['nama']?></h4>
+							<div class="rating">
+								<?php for($i = 0; $i<$item['rating']; $i++){?>
+									<i class="fa fa-star" ></i>
+								<?php $i++;}?>
+							</div>
+							<p><b><?=rupiah($item['harga'])?> / <?=@$item['satuan'] ?> </b></p>
+							<br>
+							<p><i class="fa fa-map-marker" aria-hidden="true"></i> Medan, Sumatera Utara</p>
+						</a>
+					</div>
         <?php }?>
 		</div>
 

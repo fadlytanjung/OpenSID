@@ -53,7 +53,7 @@
                                         <tr>
                                             <td>Harga Produk</td>
                                             <td> : </td>
-                                            <td><?php echo rupiah($detail["harga"]);?></td>
+                                            <td><?php echo rupiah($detail["harga"]);?> / <?= $detail["satuan"] ?></td>
                                         </tr>
                                         <tr>
                                             <td>Deskripsi</td>
@@ -69,6 +69,43 @@
                                             <td>Gambar</td>
                                             <td> : </td>
                                             <td><img width="200px" height="200px" src="<?=base_url()?>assets/product/images/<?= $detail["gambar"]?>" alt="Produk"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <h5><b>Penjual</b></h5>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-striped table-hover tabel-rincian">
+                                    <tbody>
+                                        <tr>
+                                            <td width="20%">Nama Penjual</td>
+                                            <td width="1">:</td>
+                                            <td><?= strtoupper($detail["namapenjual"]); ?></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="20%">Nomor Telepon</td>
+                                            <td width="1">:</td>
+                                            <td><?= strtoupper($detail["nomortelpon"]); ?></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nomor WhatsApp</td>
+                                            <td> : </td>
+                                            <td><?= $detail["nomorwa"]?></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Email</td>
+                                            <td> : </td>
+                                            <td><?php echo $detail["email"];?></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Alamat</td>
+                                            <td> : </td>
+                                            <td><?= $detail["alamat"]?></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Poto Profil </td>
+                                            <td> : </td>
+                                            <td><img width="200px" height="200px" src="<?=base_url()?>assets/product/images/penjual/<?= $detail["poto"]?>" alt="Penjual"></td>
                                         </tr>
                                     </tbody>
                                 </table>
