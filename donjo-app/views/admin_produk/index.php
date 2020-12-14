@@ -13,7 +13,6 @@
 				<div class="box box-info">
 					<div class="box-header with-border">
 						<a href="<?=site_url('produk/create')?>" class="btn btn-social btn-flat bg-olive btn-sm visible-xs-block visible-sm-inline-block visible-md-inline-block visible-lg-inline-block" title="Tambah Program Bantuan Baru"><i class="fa fa-plus"></i> Tambah Produk</a>
-						<a href="<?=site_url('program_bantuan/panduan')?>" class="btn btn-social btn-flat btn-info btn-sm visible-xs-block visible-sm-inline-block visible-md-inline-block visible-lg-inline-block" title="Tambah Program Bantuan Baru"><i class="fa fa-question-circle"></i> Panduan</a>
 						<?php if ($tampil != 0): ?>
 							<a href="<?=site_url('program_bantuan')?>" class="btn btn-social btn-flat btn-info btn-sm visible-xs-block visible-sm-inline-block visible-md-inline-block visible-lg-inline-block" title="Kembali Ke Daftar Program Bantuan"><i class="fa fa-arrow-circle-o-left"></i> Kembali Ke Daftar Produk</a>
 						<?php endif; ?>
@@ -24,14 +23,14 @@
 								<div class="dataTables_wrapper form-inline dt-bootstrap no-footer">
 									<div class="row">
 										<div class="col-sm-9">
-											<form id="mainform" name="mainform" action="" method="post">
+											<!-- <form id="mainform" name="mainform" action="" method="post">
 												<select class="form-control input-sm" name="sasaran" onchange="formAction('mainform', '<?=site_url('program_bantuan/filter/sasaran')?>')">
 													<option value="">Pilih Kategori</option>
 													<?php foreach ($list_sasaran AS $key => $value): ?>
 														<option value="<?= $key; ?>" <?= selected($set_sasaran, $key); ?>><?= $value?></option>
 													<?php endforeach; ?>
 												</select>
-											</form>
+											</form> -->
 										</div>
 										<div class="col-sm-12">
 											<div class="table-responsive">

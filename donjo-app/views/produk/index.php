@@ -32,11 +32,11 @@
 	<div class="s-container">
 		<div class="row row-2">
 			<h2>Semua Produk</h2>
-			<select>
+			<!-- <select>
 				<option>Semua Produk</option>
 				<option>Kategori 1</option>
 				<option>Kategori 2</option>
-			</select>
+			</select> -->
 		</div>
 		<div class="row-p">
 		<?php foreach($main as $item){?>

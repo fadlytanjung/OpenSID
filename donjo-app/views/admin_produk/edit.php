@@ -39,11 +39,11 @@ $(document).ready(function() {
 </script>
 <div class="content-wrapper">
 	<section class="content-header">
-		<h1>Tambah Produk</h1>
+		<h1>Edit Produk</h1>
 		<ol class="breadcrumb">
 			<li><a href="<?=site_url('hom_sid')?>"><i class="fa fa-home"></i> Home</a></li>
 			<li><a href="<?=site_url('produk')?>"> Daftar Produk</a></li>
-			<li class="active">Tambah Produk</li>
+			<li class="active">Edit Produk</li>
 		</ol>
 	</section>
 	<section class="content" id="maincontent">
