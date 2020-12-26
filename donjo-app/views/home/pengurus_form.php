@@ -206,6 +206,19 @@
 								</div>
 							</div>
 							<div class="form-group">
+								<label class="col-sm-4 control-label" for="jabatan">Tanda Tangan</label>
+								<div class="col-sm-7">
+									<div class="input-group input-group-sm">
+										<input type="text" class="form-control" id="file_path3" name="ttd">
+										<input type="file" class="hidden" id="file3" name="ttd">
+										<input type="hidden" name="old_foto1" value="<?= $pamong['pamong_gambar_ttd']?>">
+										<span class="input-group-btn">
+											<button type="button" class="btn btn-info btn-flat"  id="file_browser3"><i class="fa fa-search"></i> Browse</button>
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
 								<label class="col-xs-12 col-sm-4 col-lg-4 control-label" for="status">Status Pegawai Desa</label>
 								<div class="btn-group col-xs-12 col-sm-8" data-toggle="buttons">
 									<label id="sx3" class="btn btn-info btn-flat btn-sm col-xs-6 col-sm-5 col-lg-3 form-check-label <?php if ($pamong['pamong_status'] == '1' OR $pamong['pamong_status'] == NULL): ?>active<?php endif ?>">

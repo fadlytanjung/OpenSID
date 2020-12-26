@@ -58,6 +58,7 @@ define("LOKASI_SURAT_FORM_DESA", 'desa/template-surat/form/');
 define("LOKASI_SURAT_PRINT_DESA", 'desa/template-surat/print/');
 define("LOKASI_SURAT_EXPORT_DESA", 'desa/template-surat/export/');
 define("LOKASI_USER_PICT", 'desa/upload/user_pict/');
+define("LOKASI_USER_TTD", 'desa/upload/ttd/');
 define("LOKASI_GALERI", 'desa/upload/galeri/');
 define("LOKASI_FOTO_ARTIKEL", 'desa/upload/artikel/');
 define("LOKASI_FOTO_LOKASI", 'desa/upload/gis/lokasi/');

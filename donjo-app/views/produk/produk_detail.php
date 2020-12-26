@@ -104,7 +104,7 @@
 				<img src="<?=base_url()?>assets/product/images/<?=$produk[0]['gambar']?>" height="500px" width="100%" id="productImg">
 
 				<div class="s-img-row">
-					<div class="s-img-col">
+					<!-- <div class="s-img-col">
 						<img src="<?=base_url()?>assets/product/images/<?=$produk[0]['gambar']?>" width="100%"   class="s-img" onclick="imagePrev(this)">
 					</div>
 					<div class="s-img-col">
@@ -115,7 +115,7 @@
 					</div>
 					<div class="s-img-col">
 						<img src="https://images.unsplash.com/photo-1525904097878-94fb15835963?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" width="100%"  onclick="imagePrev(this)"  class="s-img">
-					</div>
+					</div> -->
 
 				</div>
 			</div>

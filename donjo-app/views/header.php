@@ -98,7 +98,11 @@
 		<link rel="stylesheet" href="<?= base_url()?>assets/css/L.Control.Shapefile.css" />
 		<link rel="stylesheet" href="<?= base_url()?>assets/css/leaflet.groupedlayercontrol.min.css" />
 		<link rel="stylesheet" href="<?= base_url()?>assets/css/peta.css">
-
+		<style>
+				body{
+					font-size: 17px;
+				}
+		</style>
 		<!-- Untuk ubahan style desa -->
 		<?php if (is_file("desa/css/siteman.css")): ?>
 			<link type='text/css' href="<?= base_url()?>desa/css/siteman.css" rel='Stylesheet' />
@@ -143,7 +147,7 @@
 			<header class="main-header">
 				<a href="<?=site_url()?>first"  target="_blank" class="logo">
 					<span class="logo-mini"><b>SID</b></span>
-					<span class="logo-lg"><b>OpenSID</b></span>
+					<span class="logo-lg"><b>BantuDesa</b></span>
 				</a>
 				<nav class="navbar navbar-static-top">
 					<a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">

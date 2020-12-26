@@ -1,6 +1,7 @@
 <?php
 
 define("FOTO_DEFAULT", base_url() . 'assets/files/user_pict/kuser.png');
+define("FOTO_TTD", base_url() . 'assets/files/foto_ttd/noimage.gif');
 
 define ('MIME_TYPE_SIMBOL', serialize (array(
 	'image/png',  'image/x-png' )));
@@ -91,6 +92,19 @@ function AmbilFoto($foto, $ukuran="kecil_")
 	return $file_foto;
 }
 
+function AmbilFotoTtd($foto, $ukuran="kecil_")
+{
+	if (empty($foto) OR $foto == 'kuser.png')
+		$file_foto = FOTO_TTD;
+	else
+	{
+		$ukuran = ($ukuran == "ttd_") ? "ttd_" : "";
+		$file_foto = base_url() . LOKASI_USER_TTD . $ukuran . $foto;
+		if (!file_exists(FCPATH . LOKASI_USER_TTD . $ukuran . $foto)) $file_foto = FOTO_DEFAULT;
+	}
+	return $file_foto;
+}
+
 function UploadGambarWidget($nama_file, $lokasi_file, $old_gambar)
 {
 	$dir_upload = LOKASI_GAMBAR_WIDGET;
@@ -111,6 +125,20 @@ function UploadFoto($fupload_name,$old_foto,$tipe_file="")
 	}
 	$nama_simpan = "kecil_".$fupload_name;
 	return UploadResizeImage(LOKASI_USER_PICT, $dimensi, "foto", $fupload_name, $nama_simpan, $old_foto, $tipe_file);
+}
+
+function UploadFoto1($fupload_name1,$old_foto1,$tipe_file1="")
+{
+	$tipe_file1 = TipeFile($_FILES["ttd"]);
+	$dimensi1 = array("width"=>200, "height"=>250);
+	if ($old_foto1!="")
+	{
+		// Hapus old_foto
+		unlink(LOKASI_USER_TTD.$old_foto1);
+		$old_foto1 = "ttd_".$old_foto1;
+	}
+	$nama_simpan1 = "ttd_".$fupload_name1;
+	return UploadResizeImage(LOKASI_USER_TTD, $dimensi1, "ttd", $fupload_name1, $nama_simpan1, $old_foto1, $tipe_file1);
 }
 
 function UploadGambar($fupload_name,$old_gambar)

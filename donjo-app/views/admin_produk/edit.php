@@ -61,10 +61,12 @@ $(document).ready(function() {
 						<div class="col-sm-3">
 							<select class="form-control input-sm required" name="kategori" id="cid">
 								<option value="">Pilih Kategori <?= $cid; ?></option>
-								<option <?php if ($produk[0]['kategori'] == "Kategori A"){echo "selected";}?>>Kategori A</option>
-								<option <?php if ($produk[0]['kategori'] == "Kategori B"){echo "selected";}?>>Kategori B</option>
-								<option <?php if ($produk[0]['kategori'] == "Kategori C"){echo "selected";}?>>Kategori C</option>
-								<option <?php if ($produk[0]['kategori'] == "Kategori D"){echo "selected";}?>>Kategori D</option>
+								<option <?php if ($produk[0]['kategori'] == "Kategori Kebun"){echo "selected";}?>>Kategori Kebun</option>
+								<option <?php if ($produk[0]['kategori'] == "Kategori Laut"){echo "selected";}?>>Kategori Laut</option>
+								<option <?php if ($produk[0]['kategori'] == "Kategori Bercocok Tanam"){echo "selected";}?>>Kategori Bercocok Tanam</option>
+								<option <?php if ($produk[0]['kategori'] == "Kategori Kerajinan Tangan"){echo "selected";}?>>Kategori Kerajinan Tangan</option>
+								<option <?php if ($produk[0]['kategori'] == "Kategori Kerajinan Ternak"){echo "selected";}?>>Kategori Ternak</option>
+								<option <?php if ($produk[0]['kategori'] == "Kategori Kerajinan Unggas"){echo "selected";}?>>Kategori Unggas</option>
 							</select>
 						</div>
 					</div>

@@ -38,6 +38,21 @@
 		</select>
 	</div>
 </div>
+<div class="form-group tdk-permohonan">
+	<label for="jabatan"  class="col-sm-3 control-label">Tanda Tangan</label>
+	<div class="col-sm-6 col-lg-4">
+		<select class="form-control input-sm" id="ttd" name="ttd">
+			<option value='' selected="selected" >-- Kosongkan--</option>
+			<?php foreach ($pamong AS $data): ?>
+				<?php if($data['pamong_gambar_ttd']!=null || $data['pamong_gambar_ttd'] != ''){?>
+					<option value="<?=$data['pamong_gambar_ttd']?>" <?php if ($data['pamong_ttd']==1): ?>selected<?php endif; ?>>
+						<?= $data['pamong_nama']?> (<?= $data['jabatan']?>) <?php if (!empty($tmp_nip)): ?>NIP: <?= $data['pamong_nip'];?><?php endif; ?>
+					</option>
+				<?php }?>
+			<?php endforeach; ?>
+		</select>
+	</div>
+</div>
 <script type="text/javascript">
 	$(document).ready(function()
 	{

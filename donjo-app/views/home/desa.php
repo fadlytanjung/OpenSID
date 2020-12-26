@@ -61,15 +61,15 @@
 </style>
 <div class="content-wrapper">
 	<section class='content-header'>
-		<h1>Tentang OpenSID</h1>
+		<h1>Tentang BantuDesa</h1>
 		<ol class='breadcrumb'>
 			<li><a href='<?=site_url()?>'><i class='fa fa-home'></i> Home</a></li>
-			<li class='active'>Tentang OpenSID</li>
+			<li class='active'>Tentang BantuDesa</li>
 		</ol>
 	</section>
 	<section class='content' id="maincontent">
 		<div class='row'>
-			<?php if (isset($update_available) && $update_available): ?>
+			<!-- <?php if (isset($update_available) && $update_available): ?>
 				<div class='col-md-12'>
 					<div class="callout callout-success update">
 						<h4><i class="fa fa-bullhorn"></i>&nbsp;&nbsp;Update Tersedia!</h4>
@@ -105,8 +105,8 @@
 						</div>
 					</div>
 				</div>
-			<?php endif; ?>
-			<div class='col-md-6'>
+			<?php endif; ?> -->
+			<div class='col-md-12'>
 				<div class='box box-info'>
 					<div class='box-body'>
 						<div class="row">
@@ -213,11 +213,13 @@
 					</div>
 				</div>
 			</div>
-			<div class='col-md-6'>
+			<!-- <div class='col-md-6'>
 				<div class='box box-info'>
-					<?php $this->load->view('home/about.php');?>
+					<?php 
+					// $this->load->view('home/about.php');
+					?>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</section>
 </div>

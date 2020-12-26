@@ -46,7 +46,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  */
 ?>
 
-<aside class="main-sidebar">
+<aside class="main-sidebar" >
 	<section class="sidebar">
 		<div class="user-panel">
 			<div class="pull-left image">
@@ -79,7 +79,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<?php if ($this->CI->cek_hak_akses('b', $mod['url'])): ?>
 					<?php if (count($mod['submodul'])==0): ?>
 						<li class="<?= jecho($this->modul_ini, $mod['id'], 'active'); ?>">
-							<a href="<?= site_url("$mod[url]"); ?>">
+							<a href="<?= site_url("$mod[url]"); ?>" >
 								<i class="fa <?= $mod['ikon']; ?> <?= jecho($this->modul_ini, $mod['id'], 'text-aqua'); ?>"></i><span><?= $mod['modul']; ?></span>
 								<span class="pull-right-container"></span>
 							</a>
@@ -93,7 +93,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							<ul class="treeview-menu <?= jecho($this->modul_ini, $mod['id'], 'active'); ?>">
 								<?php foreach ($mod['submodul'] as $submod): ?>
 									<li class="<?= jecho($this->sub_modul_ini, $submod['id'], 'active'); ?>">
-										<a href="<?= site_url("$submod[url]"); ?>">
+										<a href="<?= site_url("$submod[url]"); ?>" style="font-size:15px">
 											<i class="fa <?= ($submod['ikon'] != NULL) ? $submod['ikon'] : 'fa-circle-o'; ?> <?= jecho($this->sub_modul_ini, $submod['id'], 'text-red'); ?>"></i>
 											<?= $submod['modul']; ?>
 										</a>

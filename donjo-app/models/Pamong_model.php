@@ -199,6 +199,11 @@ class Pamong_model extends CI_Model {
 		$tipe_file = $_FILES['foto']['type'];
 		$nama_file = $_FILES['foto']['name'];
 
+	
+
+		// var_dump($nama_file);
+		// var_dump($nama_file1);die;
+
 		if (!empty($nama_file))
 		{
 		  $nama_file = urlencode(generator(6)."_".$_FILES['foto']['name']);
@@ -214,8 +219,32 @@ class Pamong_model extends CI_Model {
 			}
 		}
 
+		$nama_file1 = '';
+		$lokasi_file1 = $_FILES['ttd']['tmp_name'];
+		$tipe_file1 = $_FILES['ttd']['type'];
+		$nama_file1 = $_FILES['ttd']['name'];
+		if (!empty($nama_file1))
+		{
+			
+			
+		  $nama_file1 = urlencode(generator(6)."_".$_FILES['ttd']['name']);
+		  
+			if (!empty($lokasi_file1) AND in_array($tipe_file1, unserialize(MIME_TYPE_GAMBAR)))
+			{
+				UploadFoto1($nama_file1, $old_foto='', $tipe_file1);
+				// var_dump(UploadFoto1($nama_file1, $old_foto='', $tipe_file1));die;
+			}
+			else
+			{
+				$nama_file1 = '';
+				$_SESSION['success'] = -1;
+				$_SESSION['error_msg'] = " -> Jenis file salah: " . $tipe_file1;
+			}
+		}
+
 		$data = array();
 		$data['foto'] = $nama_file;
+		$data['pamong_gambar_ttd'] = $nama_file1;
 		$data = $this->siapkan_data($data);
 		// Beri urutan terakhir
 		$data['urut'] = $this->urut_model->urut_max() + 1;
@@ -269,6 +298,8 @@ class Pamong_model extends CI_Model {
 		$tipe_file = $_FILES['foto']['type'];
 		$nama_file = $_FILES['foto']['name'];
 		$old_foto = $this->input->post('old_foto');
+		$old_foto1 = $this->input->post('old_foto1');
+		
 		if (!empty($nama_file))
 		{
 			if (!empty($lokasi_file) AND in_array($tipe_file, unserialize(MIME_TYPE_GAMBAR)))
@@ -283,6 +314,26 @@ class Pamong_model extends CI_Model {
 			}
 		}
 
+		$nama_file1 = '';
+		$lokasi_file1 = $_FILES['ttd']['tmp_name'];
+		$tipe_file1 = $_FILES['ttd']['type'];
+		$nama_file1 = $_FILES['ttd']['name'];
+
+		if (!empty($nama_file1))
+		{
+			
+			if (!empty($lokasi_file1) AND in_array($tipe_file1, unserialize(MIME_TYPE_GAMBAR)))
+			{
+			  $data['pamong_gambar_ttd'] = urlencode(generator(6)."_".$nama_file1);
+				UploadFoto1($data['pamong_gambar_ttd'], $old_foto1, $tipe_file1);
+			}
+			else
+			{
+				$_SESSION['success'] = -1;
+				$_SESSION['error_msg'] = " -> Jenis file salah: " . $tipe_file1;
+			}
+		}
+
 		$data = $this->siapkan_data($data);
 		$this->db->where("pamong_id", $id)->update('tweb_desa_pamong', $data);
 	}
@@ -292,11 +343,19 @@ class Pamong_model extends CI_Model {
 		if (!$semua) $this->session->success = 1;
 
 		$foto = $this->db->select('foto')->where('pamong_id',$id)->get('tweb_desa_pamong')->row()->foto;
+		$ttd = $this->db->select('pamong_gambar_ttd')->where('pamong_id',$id)->get('tweb_desa_pamong')->row()->pamong_gambar_ttd;
 		if (!empty($foto))
 		{
 			unlink(LOKASI_USER_PICT.$foto);
-			unlink(LOKASI_USER_PICT.'kecil_'.$foto);
+			unlink(LOKASI_USER_PICT.'ttd_'.$foto);
 		}
+
+		if (!empty($ttd))
+		{
+			unlink(LOKASI_USER_TTD.$ttd);
+			unlink(LOKASI_USER_TTD.'ttd_'.$ttd);
+		}
+
 
 		$outp = $this->db->where('pamong_id', $id)->delete('tweb_desa_pamong');
 

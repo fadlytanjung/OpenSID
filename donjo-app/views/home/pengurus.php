@@ -84,6 +84,7 @@
 																<th>Nomor SK Pemberhentian</th>
 																<th>Tanggal SK Pemberhentian</th>
 																<th>Masa/Periode Jabatan</th>
+																<th>TTD</th>
 															</tr>
 														</thead>
 														<tbody>
@@ -147,6 +148,7 @@
 																	<td><?= $data['pamong_nohenti']?></td>
 																	<td><?= tgl_indo_out($data['pamong_tglhenti'])?></td>
 																	<td><?= $data['pamong_masajab']?></td>
+																	<td><img src="<?=AmbilFotoTtd($data['pamong_gambar_ttd'])?>" alt="Gambar ttd" width="100px" height="100px"></td>
 																</tr>
 															<?php endforeach; ?>
 														</tbody>

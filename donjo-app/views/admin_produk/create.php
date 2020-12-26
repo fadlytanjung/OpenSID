@@ -80,10 +80,12 @@ $(document).ready(function() {
 						<div class="col-sm-3">
 							<select class="form-control input-sm required" name="kategori" id="cid">
 								<option value="">Pilih Kategori <?= $cid; ?></option>
-								<option>Kategori A</option>
-								<option>Kategori B</option>
-								<option>Kategori C</option>
-								<option>Kategori D</option>
+								<option>Kategori Kebun</option>
+								<option>Kategori Laut</option>
+								<option>Kategori Bercocok Tanam</option>
+								<option>Kategori Kerajinan Tangan</option>
+								<option>Kategori Ternak</option>
+								<option>Kategori Unggas</option>
 							</select>
 						</div>
 					</div>
